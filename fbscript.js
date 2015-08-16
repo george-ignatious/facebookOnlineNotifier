@@ -27,8 +27,8 @@ function getCallable(text) {
 // Make the actual CORS request.
 function makeCorsRequest(id) {
   // All HTML5 Rocks properties support CORS.
-var url="https://m.facebook.com/rtc/callability/?user_id=100006915194491";
-var xhr = createCORSRequest('GET', url);
+var url="https://m.facebook.com/rtc/callability/?user_id=";
+var xhr = createCORSRequest('GET', url+id);
   if (!xhr) {
     alert('CORS not supported');
     return;
